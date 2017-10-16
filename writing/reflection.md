@@ -14,7 +14,7 @@ me. At the beginning of using the replace command, I had difficulties because I
 did not know that the apostrophes were required around the letters, but
 thankfully I was able to fix that mistake. I also enjoyed discovering and using
 the alphabet command to select a random character from a given set, which was
-an exciting way to make sure I got a random A, C, T, or G. 
+an exciting way to make sure I got a random A, C, T, or G.
 
 To manipulate the DNA, I first calculated the complement by creating a series
 of manipulations, first duplicating the original dna string entered and then
@@ -32,4 +32,4 @@ and thus the random position was never included and "deleted" it from the
 sequence. In step 5, I generated a random position and a random character and
 made a substring from 0 to the random position and a substring from the
 position + 1 to the end, then made a string that added the first substring, the
-random character, and the second substring to form the answer. 
+random character, and the second substring to form the answer.

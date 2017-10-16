@@ -40,34 +40,34 @@ public class ManipulateDna {
     String s2 = s1.replace('c','G');
     String s3 = s2.replace('g','C');
     String complement = s3.replace('t','A');
-    System.out.println("The complement of " + dna.toUpperCase() + " is " + complement.toUpperCase());
+    System.out.println("Complement of " + dna.toUpperCase() + " is " + complement.toUpperCase());
     // Step Three: Insert a randomly chosen DNA letter into the DNA String
     Random r1 = new Random();
     String alphabet1 = "ACTG";
-    int N1 = alphabet1.length();
-    char randomChar = alphabet1.charAt(r1.nextInt(N1));
+    int n1 = alphabet1.length();
+    char ranChar = alphabet1.charAt(r1.nextInt(n1));
     String sub1 = dna.substring(0,2);
     String sub2 = dna.substring(2);
-    String dnaPlusLetter = sub1 + randomChar + sub2;
-    System.out.println("Inserting " + randomChar + " at position 2 gives " + dnaPlusLetter.toUpperCase());
+    String dnaPluLet = sub1 + ranChar + sub2;
+    System.out.println("Inserting " + ranChar + " at position 2 gives " + dnaPluLet.toUpperCase());
     // Step Four: Delete a DNA letter from a randomly chosen position in the DNA string
     Random generator = new Random();
     int ranPos;
     ranPos = generator.nextInt(4);
     String firstpart = dna.substring(0,ranPos);
     String secondpart = dna.substring(ranPos + 1);
-    String dnaMinusRanLet = firstpart + secondpart;
-    System.out.println("Deleting from position " + ranPos + " gives " + dnaMinusRanLet.toUpperCase());
+    String dnaMinRan = firstpart + secondpart;
+    System.out.println("Deleting from position " + ranPos + " gives " + dnaMinRan.toUpperCase());
     // Step Five: Change a random position in the DNA String to a randomly chosen DNA letter
     int ranPos2;
     String alphabet = "ACTG";
-    int N = alphabet.length();
-    Random r = new Random();
+    int n2 = alphabet.length();
+    Random r2 = new Random();
     ranPos2 = generator.nextInt(4);
     String part1 = dna.substring(0,ranPos2);
     String part2 = dna.substring(ranPos2 + 1);
-    char ranChar = alphabet.charAt(r.nextInt(N)); 
-    String step5 = part1 + ranChar + part2;
+    char ranChar2 = alphabet.charAt(r2.nextInt(n2)); 
+    String step5 = part1 + ranChar2 + part2;
     System.out.println("Changing position " + ranPos2 + " gives " + step5.toUpperCase());
     // Step Six: Display a final thankyou message
     System.out.println("\nThank you for using the ManipulateDna program. Have a nice day.");
